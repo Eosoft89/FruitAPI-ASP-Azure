@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
 //Puedo acceder a la info de la API a traves de la ruta (por ej. http://localhost:5050) + /swagger
-
+//La ruta del sitio piblicado en Azure es: https://fruitapi-eosoft.azurewebsites.net/swagger/index.html
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<FruitDb>(opt => opt.UseInMemoryDatabase("FruitList"));
